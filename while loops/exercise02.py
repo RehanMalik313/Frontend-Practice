@@ -1,23 +1,21 @@
 #Task02:
 #Ask the user to enter a number and then enter another number. Add these two numbers together and then ask if they want to add another number. If they enter “y", ask them to enter another number and keep adding numbers until they do not answer “y”. Once the loop has stopped, display the total.
 
-num0 = int(input("Enter a number:"))
-num1 = int(input("Enter a number: ")) 
+num0 = int(input("Enter a number: "))
+num1 = int(input("Enter a number: "))
 
-add = num0 + num1
+total = num0 + num1
 
 while True:
-    ans = input("Do you want to add another number? (y/n) ")
-    if ans == 'y':
-        num3 = int(input("Enter another num: "))
-        add += num3
-    elif ans =='n':
+    ans = input('Do you want to add another number?(y/n): ')
+    if  ans == 'y':
+        ask = int(input("Enter another number: "))
+        total = ask + total
+    elif ans == 'n':
         break
-    else:
-        print("Enter y or n")
-        
+    
+print(f"The total is {total}")
 
-print(f"The Total is {add}.")
 
 
 #Practice Question:

@@ -28,16 +28,17 @@ max_Attempts = 3
 attempts = 0
 
 while attempts < max_Attempts:
-    password = input("Enter your password: ")
+    Password= input("Enter your Password: ")
 
-    if password =="Python123":
-        print("Acess Granted!")
+    if Password == 'Python123':
+        print("Access Granted!")
         break
+
     else:
-        print("Wrong password, Try again!")
+        print('Wrong Password, Try again!')
         attempts += 1
 
-if attempts == max_Attempts:
-    print("Too many attempts, Try later!")
+    if attempts == max_Attempts:
+        print("Too many attempts, Try Later!")
 
     
